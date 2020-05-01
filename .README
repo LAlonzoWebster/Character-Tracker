@@ -1,0 +1,20 @@
+Stretch Your Thoughts: answer the following questions: 
+
+1. What type of resources can you host with Express?
+    Databases
+
+2. What are the benefits of using a View Engine overusing Vanilla technologies?
+
+        If the front end is lots of content that may come from a database but is mostly static once it hits the page (e.g. blog, news/review or other article based content), use a templating engine. Also use back end templating if you are selling anything (more secure)
+
+        If the front end has lots of user interaction or custom displays so the DOM changes often after initial render (e.g. dashboard or real-time feed), use a front end framework.
+
+        You would also use a front end framework in a sales site for things like infinite scroll or real time filtering as users prefer a seamless app-like reload rather than full page refreshes. You would still revert to back end render for the sales pages (basket handling)
+
+source:https://www.quora.com/Do-most-NodeJS-Express-website-use-a-templating-engine-Handlebars-EJS-Jade-or-a-front-end-framework-React-Angular-Vue
+
+2. Why does the Express Generator split up the functionality into so many files?
+
+    The express generator does a great job of giving you the very essential boilerplate code, but if your application starts to grow beyond just a few routes you’ll soon find that you need a better routing strategy than putting all route handlers in the app.js file.
+
+source: https://medium.com/@sesitamakloe/how-we-structure-our-express-js-routes-58933d02e491
