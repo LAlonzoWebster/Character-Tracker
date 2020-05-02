@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 /*
     name,
-    cohort,
+    characterClass,
     level,
     background,
     playerName,
@@ -14,7 +14,7 @@ const Schema = mongoose.Schema;
 const characterSchema = new Schema({
     name: {
         type: String,
-        unique: false,
+        unique: false, 
         required: true,
     },
     characterClass: {

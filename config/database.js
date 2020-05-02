@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbUri = require('./settings');
+const dbUri = require('./settings').DBURI;
 const dbOptions = {
     useUnifiedTopology: true,
     useNewUrlParser: true,
@@ -9,6 +9,7 @@ const dbOptions = {
 };
 
 module.exports = function () {
+    
     mongoose.connect(dbUri, dbOptions);
 
     mongoose.connection.on('connected', () => {

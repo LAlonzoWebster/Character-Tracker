@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const racesSchema = new Schema({
+const classesSchema = new Schema({
     name: {
         type: String,
         unique: true,
@@ -9,4 +9,4 @@ const racesSchema = new Schema({
     },
 });
 
-module.exports = racesSchema;
+module.exports = classesSchema;
